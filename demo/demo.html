@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>使用jQuery框架的prettyPhoto图片特效</title>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" />
+<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-table;}/* Hides from IE-mac \*/
+.gallery{ min-width:800px;}
+.gallery li{float:left;margin-right:10px;display:inline; margin-top:15px; border:1px solid #CCC; padding:1px;}
+</style>
+</head>
+<body>
+<ul class="gallery clearfix">
+	<li><a href="img/fullscreen/1.jpg" rel="prettyPhoto[gallery1]"  ><img src="img/fullscreen/1.jpg" width="90" height="90" /></a></li>
+	<li><a href="img/fullscreen/2.jpg" rel="prettyPhoto[gallery1]"><img src="img/fullscreen/2.jpg" width="90" height="90" /></a></li>
+	<li><a href="img/fullscreen/3.jpg" rel="prettyPhoto[gallery1]"><img src="img/fullscreen/3.jpg" width="90" height="90"  /></a></li>
+	<li><a href="img/fullscreen/4.jpg" rel="prettyPhoto[gallery1]"><img src="img/fullscreen/4.jpg" width="90" height="90" /></a></li>
+	<li><a href="img/fullscreen/5.jpg" rel="prettyPhoto[gallery1]"><img src="img/fullscreen/5.jpg" width="90" height="90" /></a></li>
+     <li><a href="img/fullscreen/1.jpg" rel="prettyPhoto[gallery1]" ><img src="img/fullscreen/1.jpg" width="90" height="90" /></a></li>
+</ul>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".gallery a[rel^='prettyPhoto']").prettyPhoto({theme:'dark_square'});
+});
+</script>
+
+</body>
+</html>
